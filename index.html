@@ -1,188 +1,20 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Uget-chrome-wrapper by slgobinath</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Uget-chrome-wrapper</h1>
-      <h2 class="project-tagline">Integrate uGet Download Manager with Google Chrome</h2>
-      <a href="https://github.com/slgobinath/uget-chrome-wrapper" class="btn">View on GitHub</a>
-      <a href="https://github.com/slgobinath/uget-chrome-wrapper/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/slgobinath/uget-chrome-wrapper/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+---
+layout: default
+---
 
-    <section class="main-content">
-      <h1>
-<a id="uget-chrome-wrapper" class="anchor" href="#uget-chrome-wrapper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>uGet Chrome Wrapper</h1>
+<div class="home">
 
-<p>Integrate the famous FOSS uGet Download Manager with Google Chrome in Linux systems. With this tool, uGet can interrupt and catch your downloads from Google Chrome.</p>
+  <h1>Posts</h1>
 
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-<h3>
-<a id="installing-uget-download-manager" class="anchor" href="#installing-uget-download-manager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing uGet Download Manager</h3>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<p>If you do not have <a href="http://ugetdm.com/">uGet</a> Download Manager, install the latest version using the following commands.</p>
-
-<p>1: Add the PPA: <code>sudo add-apt-repository ppa:plushuang-tw/uget-stable</code></p>
-
-<p>2: Download the package list: <code>sudo apt update</code></p>
-
-<p>3: Install uget: <code>sudo apt install uget</code></p>
-
-<h3>
-<a id="installing-uget-chrome-wrapper" class="anchor" href="#installing-uget-chrome-wrapper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing uget-chrome-wrapper</h3>
-
-<hr>
-
-<h4>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux:</h4>
-
-<p><strong>Method 1: From PPA</strong></p>
-
-<p>1: Add the PPA: <code>sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</code></p>
-
-<p>2: Download the package list: <code>sudo apt update</code></p>
-
-<p>3: Install uget-chrome-wrapper: <code>sudo apt install uget-chrome-wrapper</code></p>
-
-<p>4: Install <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi">uGet Integration</a> extension to your browser.</p>
-
-<p>5: Restart the browser</p>
-
-<p><strong>Method 2: From Debian</strong></p>
-
-<p>1: Download and install the debian file from <a href="http://ppa.launchpad.net/slgobinath/uget-chrome-wrapper/ubuntu/pool/main/u/uget-chrome-wrapper">here</a></p>
-
-<p>2: Install <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi">uGet Integration</a> extension to your browser.</p>
-
-<p>3: Restart the browser</p>
-
-<p><strong>Method 3: Manual Installation</strong></p>
-
-<p>1: Download the uget-chrome-wrapper to /usr/bin: <code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></p>
-
-<p>2: Make the uget-chrome-wrapper executable: <code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></p>
-
-<p><em>For Google Chrome:</em></p>
-
-<p>3.1: Create a new directory native-messaging-hosts if not exists: <code>sudo mkdir -p /etc/opt/chrome/native-messaging-hosts</code></p>
-
-<p>3.2: Download the com.javahelps.ugetchromewrapper.json to that directory: <code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/opt/chrome/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></p>
-
-<p><em>For Chromium and Vivaldi:</em></p>
-
-<p>3.1: Create a new directory native-messaging-hosts if not exists: <code>sudo mkdir -p /etc/chromium/native-messaging-hosts</code></p>
-
-<p>3.2: Download the com.javahelps.ugetchromewrapper.json to that directory: <code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/chromium/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></p>
-
-<p>4: Install <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi">uGet Integration</a> extension to your browser.</p>
-
-<p>5: Restart the browser</p>
-
-<hr>
-
-<h4>
-<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows:</h4>
-
-<p>1: Download and install <a href="https://www.python.org/downloads/release/python-2712/">Python 2.7</a></p>
-
-<p>2: Add uGet to the system path <a href="https://github.com/slgobinath/uget-chrome-wrapper/blob/master/build/windows/add_uget_to_path.png">Screenshot</a></p>
-
-<p>3: Download and install <a href="https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v1.2/uget-chrome-wrapper_1.2.1.exe">uget-chrome-wrapper</a></p>
-
-<p>4: Install <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi">uGet Integration</a> extension to your browser.</p>
-
-<p>5: Restart the browser</p>
-
-<blockquote>
-<p>Please note that this is my leisure time project. Even though I will continue development and bug fixes, Windows is not my targeted operating system. Even for the first release, I installed the trial version of Windows in Virtual Box and created the setup file. Therefore there may be delays in releasing the bug fixes and new features to Windows users.</p>
-</blockquote>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>Simply click on any downloadable links to download the file. 'uGet new Download' dialog will appear and continue the download.</p>
-
-<p>To disable uGet from interrupting your download, press <kbd>Insert</kbd> key and click on the link.</p>
-
-<h2>
-<a id="tested-environments" class="anchor" href="#tested-environments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tested Environments</h2>
-
-<ul>
-<li>Linux Mint 18, uGet 2.0.8, Google Chrome 54.0.2840.59 (PPA installation)</li>
-<li>Linux Mint 18, uGet 2.0.8, Vivaldi 1.4.589.38 (PPA installation)</li>
-<li>Arch Anywhere 2.2.3, uGet 2.0.8, Vivaldi 1.4.589.38 (Manual installation)</li>
-<li>Windows 8.1, uGet 2.0.8, Google Chrome 54.0.2840.59</li>
-</ul>
-
-<h2>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
-
-<p><strong>Are you a user?</strong></p>
-
-<p>Please test uget-chrome-wrapper on your system and report any issues <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues">here</a></p>
-
-<p><strong>Are you a developer?</strong></p>
-
-<ol>
-<li>Fork it!</li>
-<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
-</li>
-<li>Commit your changes: <code>git commit -am 'Add some feature'</code>
-</li>
-<li>Push to the branch: <code>git push origin my-new-feature</code>
-</li>
-<li>Submit a pull request</li>
-</ol>
-
-<p><strong>Are you using a different operating system?</strong></p>
-
-<p>Please test uget-chrome-wrapper and create installers for your operating system</p>
-
-<h2>
-<a id="history" class="anchor" href="#history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>History</h2>
-
-<p>Version 1.2:</p>
-
-<ul>
-<li>Now uget-chrome-wrapper supports Google Chrome, Chromium and Vivaldi</li>
-</ul>
-
-<p>Version 1.1:</p>
-
-<ul>
-<li>Fix extension id mismatch</li>
-<li>Fix %20 in filename</li>
-</ul>
-
-<p>Version 1.0:</p>
-
-<ul>
-<li>Integrate uGet Download Manager with Google Chrome</li>
-</ul>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
-
-<p>GNU General Public License v3</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/slgobinath/uget-chrome-wrapper">Uget-chrome-wrapper</a> is maintained by <a href="https://github.com/slgobinath">slgobinath</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
-</html>
+</div>

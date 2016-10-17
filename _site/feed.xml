@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uGet Chrome Wrapper</title>
+    <description>Integrate uGet Download Manager with Google Chrome, Chromium and Vivaldi</description>
+    <link>http://localhost:4000/uget-chrome-wrapper/</link>
+    <atom:link href="http://localhost:4000/uget-chrome-wrapper/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 17 Oct 2016 20:33:04 +0530</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2016 20:33:04 +0530</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Ubuntu</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/uget-chrome-wrapper/2014/07/18/project-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/18/project-1/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Other Linux</title>
+        <description>
+</description>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/uget-chrome-wrapper/2014/07/17/project-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/17/project-2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Other Linux</title>
+        <description>
+</description>
+        <pubDate>Wed, 16 Jul 2014 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/uget-chrome-wrapper/2014/07/16/project-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/16/project-3/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Windows</title>
+        <description>
+</description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/uget-chrome-wrapper/2014/07/15/project-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/15/project-4/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

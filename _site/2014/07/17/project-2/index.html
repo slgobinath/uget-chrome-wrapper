@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Other Linux</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Integrate uGet Download Manager with Google Chrome, Chromium and Vivaldi">
+    <link rel="canonical" href="http://localhost:4000/uget-chrome-wrapper/2014/07/17/project-2/">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/uget-chrome-wrapper/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/uget-chrome-wrapper/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">uGet Chrome Wrapper</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#installation">Installation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">About</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To uGet Chrome Wrapper</div>
+                <div class="intro-heading">uGet Chrome Wrapper</div>
+                <a href="#introduction" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+<!--
+        
+          
+        
+          
+        
+          
+        
+ -->
+
+
+    <!-- Services Section -->
+    <section id="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Introduction</h2>
+                    <h3 class="section-subheading text-muted">We integrate the best download manager with the best web browser.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-arrow-circle-o-down fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">uGet</h4>
+                    <p class="text-muted">uGet is an Open Source download manager application for GNU/Linux developed with GTK+, which also comes packaged as a portable Windows application.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-chrome fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Google Chrome/Chromium/Vivaldi</h4>
+                    <p class="text-muted">The fast, secure, and free web browsers built for the modern web. All the features are tested on Google Chrome and expected to work in Chromium and Vivaldi.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-linux fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Linux/Windows</h4>
+                    <p class="text-muted">This project is an attempt to fill the gap in download accelerators available for Linux. However, setup for Windows is available for people using uGet in Windows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="installation" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Installation</h2>
+                    <h3 class="section-subheading text-muted">Requires <a href="https://www.python.org/downloads/release/python-2712/">Python 2.7</a> and latest <a href="http://ugetdm.com/downloads">uGet (2.0.8 or latest)</a></h3>
+                </div>
+            </div>
+            <div class="row">
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#ubuntu" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ubuntu-thumbnail.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Ubuntu</h4>
+                        <p class="text-muted">Ubuntu and its derivatives</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#manual-installation-for-chrome" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/linux-chrome-thumbnail.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Other Linux</h4>
+                        <p class="text-muted">Manual installation for Google Chrome</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#manual-installation-for-chromium" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/linux-chromium-thumbnail.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Other Linux</h4>
+                        <p class="text-muted">Manual installation for Chromium & Vivaldi</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#windows" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/windows-thumbnail.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Windows</h4>
+                        <p class="text-muted">Setup for Windows</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Features</h2>
+                    <h3 class="section-subheading text-muted">Currently available features of uget-chrome-wrapper</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/features/steps.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>What else?</h4>
+                                    <h4 class="subheading">This is just the start of the journey</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I develop this project as one of my leisure time project and I will continue to add more features. However, please forgive me for the slow development lifecycle due to my busy schedule.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/features/youtube.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Downloading youtube videos?</h4>
+                                    <h4 class="subheading">No you can't but still you can</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">If I provide Youtube downloader along with the extension, Google will black list the extension from Chrome webstore and which will make installation more complex. There are experts like Savefrom.net in grabbing Youtube download links; uget-chrome-wrapper can grab from them ;-).</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/features/skip.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Skip uGet</h4>
+                                    <h4 class="subheading">Prevent uGet from interrupting</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Sometimes downloading using the browser is a prefereable option. In such case press and hold the <strong>Insert</strong> key to prevent uGet from interrupting your download.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/features/integration.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Browser Integration</h4>
+                                    <h4 class="subheading">Accelerate all your downloads</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">uGet Download Manager with aria2 plugin accelerates the downloads equal to IDM & XDM. With uget-chrome-wrapper all you need to do is simply clicking on the download links.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>This is
+                                    <br>all
+                                    <br>I have</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">A crazy guy who spends his time to develop some bullshits</h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Gobinath</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="https://twitter.com/lgobinath">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://lk.linkedin.com/in/gobinathl">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://plus.google.com/+Javahelpsplus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://www.javahelps.com">
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://medium.com/cognitio">
+                                    <i class="fa fa-medium"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/slgobinath">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://stackoverflow.com/users/4382663/gobinath">
+                                    <i class="fa fa-stack-overflow"></i>
+                                </a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">If you find any bugs in uget-chrome-wrapper, please report them @ <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues">GitHub</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <!-- Clients Aside -->
+    <aside class="clients">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </aside> -->
+    <section id="contact">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!--   <footer>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; uGet Chrome Wrapper 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </footer>
+ -->
+     <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="ubuntu" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ubuntu</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/ubuntu.png" class="img-responsive img-centered" alt="image-alt"> -->
+                            <p>Linux Mint is the development environment of uget-chrome-wrapper so all features are tested in Ubuntu environment. To integrate uGet with Google Chrome/Chromium/Vivaldi, follow the steps given below.</p>
+                            <p align="left">
+                            <ol>
+                            
+                                <li align="left">Add the PPA:<pre><code>sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Download the package list:<pre><code>sudo apt-get update</code></pre></li>
+                            
+                                <li align="left">Install uget-chrome-wrapper:<pre><code>sudo apt install uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser</li>
+                            
+                                <li align="left">Restart the browser</li>
+                            
+                            </ol>
+                            </p>
+                            <br>
+                            <h3>Tested Environments</h3>
+                                
+                                    Linux Mint 18, uGet 2.0.8, Google Chrome 54.0.2840.59<br>
+                                
+                                    Linux Mint 18, uGet 2.0.8, Vivaldi 1.4.589.38<br>
+                                
+
+                                <br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="manual-installation-for-chrome" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Other Linux</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/linux.png" class="img-responsive img-centered" alt="image-alt"> -->
+                            <p>Any Linux system with Python 2.7 must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Google Chrome</strong>, follow the steps given below.</p>
+                            <p align="left">
+                            <ol>
+                            
+                                <li align="left">Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Create a new directory <i>native-messaging-hosts</i> if not exists:<pre><code>sudo mkdir -p /etc/opt/chrome/native-messaging-hosts</code></pre></li>
+                            
+                                <li align="left">Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/opt/chrome/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre></li>
+                            
+                                <li align="left">Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser</li>
+                            
+                                <li align="left">Restart the browser</li>
+                            
+                            </ol>
+                            </p>
+                            <br>
+                            <h3>Tested Environments</h3>
+                                
+                                    N/A<br>
+                                
+
+                                <br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="manual-installation-for-chromium" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Other Linux</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/linux.png" class="img-responsive img-centered" alt="image-alt"> -->
+                            <p>Any Linux system with Python 2.7 must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below.</p>
+                            <p align="left">
+                            <ol>
+                            
+                                <li align="left">Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /etc/chromium/native-messaging-hosts</code></pre></li>
+                            
+                                <li align="left">Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/chromium/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre></li>
+                            
+                                <li align="left">Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser</li>
+                            
+                                <li align="left">Restart the browser</li>
+                            
+                            </ol>
+                            </p>
+                            <br>
+                            <h3>Tested Environments</h3>
+                                
+                                    Arch Anywhere 2.2.3, uGet 2.0.8, Vivaldi 1.4.589.38<br>
+                                
+
+                                <br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="windows" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Windows</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/windows.png" class="img-responsive img-centered" alt="image-alt"> -->
+                            <p>Windows is not our main target because of extra testing effort requried. Therefore uget-chrome-wrapper for Windows may get the updates and bug fixes bit later than the Linux version. To integrate uGet with Google Chrome/Chromium/Vivaldi, follow the steps given below.</p>
+                            <p align="left">
+                            <ol>
+                            
+                                <li align="left">Install <a href='https://www.python.org/downloads/release/python-2712/'>Python 2.7</a></li>
+                            
+                                <li align="left">Add uGet bin folder to the path (Open the screenshot in a new tab for clear image)<img src='https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/windows/add_uget_to_path.png' class='img-responsive img-centered' alt='Screenshot'/></li>
+                            
+                                <li align="left">Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v1.2/uget-chrome-wrapper_1.2.1.exe'>uget-chrome-wrapper.exe</a></li>
+                            
+                                <li align="left">Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser</li>
+                            
+                                <li align="left">Restart the browser</li>
+                            
+                            </ol>
+                            </p>
+                            <br>
+                            <h3>Tested Environments</h3>
+                                
+                                    Windows 8.1, uGet 2.0.8, Google Chrome 54.0.2840.59<br>
+                                
+
+                                <br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/uget-chrome-wrapper/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/uget-chrome-wrapper/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/uget-chrome-wrapper/js/jquery.easing.min.js"></script>
+    <script src="/uget-chrome-wrapper/js/classie.js"></script>
+    <script src="/uget-chrome-wrapper/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/uget-chrome-wrapper/js/jqBootstrapValidation.js"></script>
+    <script src="/uget-chrome-wrapper/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/uget-chrome-wrapper/js/agency.js"></script>
+
+
+    </body>
+</html>
