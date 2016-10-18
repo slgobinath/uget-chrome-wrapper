@@ -1,5 +1,5 @@
 ---
-title: Other Linux
+title: Any Linux Systems
 subtitle: Manual installation for Chromium & Vivaldi
 layout: default
 modal-id: 3
