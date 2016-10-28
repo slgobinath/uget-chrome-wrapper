@@ -1,19 +1,19 @@
 ---
 title: Any Linux Systems
-subtitle: Manual installation for Chromium & Vivaldi
+subtitle: Manual installation for Google Chrome
 layout: default
-modal-id: 3
+modal-id: 2
+modal-url: manual-installation-for-chrome
 img: linux.png
-modal-url: manual-installation-for-chromium
-thumbnail: linux-chromium-thumbnail.png
+thumbnail: linux-chrome-thumbnail.png
 alt: image-alt
-description: Any Linux system with Python 2.7 must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below.
+description: Any Linux system with Python 2.7 must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Google Chrome</strong>, follow the steps given below.
 steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
-		"Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /etc/chromium/native-messaging-hosts</code></pre>",
-		"Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/chromium/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre>",
+		"Create a new directory <i>native-messaging-hosts</i> if not exists:<pre><code>sudo mkdir -p /etc/opt/chrome/native-messaging-hosts</code></pre>",
+		"Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/opt/chrome/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
-environments: ["Arch Anywhere 2.2.3, uGet 2.0.8, Vivaldi 1.4.589.38", "Manjaro 16.10 Fringilla, uGet 2.0.8, Chromium 54"]
+environments: ["Ubuntu 14.04, uGet 2.0.8, Google Chrome 54.0.2840.59"]
 
 ---
