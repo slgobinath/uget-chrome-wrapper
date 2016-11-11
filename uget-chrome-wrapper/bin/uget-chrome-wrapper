@@ -25,6 +25,7 @@ import threading
 from subprocess import call
 import json
 from urlparse import urlparse
+import os
 from os.path import splitext, basename, join, expanduser
 import urllib2
 from mimetypes import guess_extension
@@ -91,15 +92,40 @@ def read_message():
 			url = data['url']
 			
 			if url: 
-				filename = data['filename']
+				filename = data['filename'] if data['filename'] else extract_file_name(url)
 				cookie = data['cookies']
 				referer = data['referrer']
-				if not filename:
-					filename = extract_file_name(url)
+
+				cmd = [UGET_COMMAND]
+				cookie_filepath = '/tmp/uget_cookie'
+				use_cookie_file = False
+
+				if cookie:
+					try:
+						with open(cookie_filepath, 'wb') as cookie_file:
+							cookie_file.write(cookie)
+
+						use_cookie_file = True
+					except:
+						pass
+
+				cmd.append("--filename=" + filename)
+
 				if referer:
-					call([UGET_COMMAND, "--http-referer=" + referer, "--filename=" + filename, url])
-				else:
-					call([UGET_COMMAND, "--filename=" + filename, url])
+					cmd.append("--http-referer=" + referer)
+
+				if use_cookie_file:
+					cmd.append("--http-cookie-file=" + cookie_filepath)
+					
+				cmd.append(url)
+
+				call(cmd)
+
+				if use_cookie_file:
+					try:
+						os.remove(cookie_filepath)
+					except:
+						pass
 			
 			sys.exit(0)
 

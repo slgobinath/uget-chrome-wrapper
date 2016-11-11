@@ -73,6 +73,8 @@ var message = {
     postdata: ''
 };
 
+var cookies = '';
+
 // Listen to the key press
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
     var msg = request.message;
@@ -112,6 +114,33 @@ function postParams(source) {
     return array.join('&');
 }
 
+function extractRootURL(url) {
+    var domain;
+    
+    if (url.indexOf("://") > -1) {
+        domain = url.split('/')[0] + '/' + url.split('/')[1] + '/' + url.split('/')[2];
+    } else {
+        domain = url.split('/')[0];
+    }
+
+    return domain;
+}
+
+function parseCookies(cookies_arr) {
+    cookies = '';
+
+    for (var i in cookies_arr) {
+        cookies += cookies_arr[i].domain + '\t';
+        cookies += (cookies_arr[i].httpOnly ? "FALSE" : "TRUE") + '\t';
+        cookies += cookies_arr[i].path + '\t';
+        cookies += (cookies_arr[i].secure ? "TRUE" : "FALSE") + '\t';
+        cookies += Math.round(cookies_arr[i].expirationDate) + '\t';
+        cookies += cookies_arr[i].name + '\t';
+        cookies += cookies_arr[i].value;
+        cookies += '\n';
+    }
+}
+
 // Add to Chrome context menu
 chrome.contextMenus.create({
     title: 'Download with uGet',
@@ -123,8 +152,12 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     "use strict";
     if (info.menuItemId === "download_with_uget") {
         clearMessage();
+        chrome.cookies.getAll({'url' : extractRootURL(info.pageUrl)}, parseCookies);
+
         message.url = info['linkUrl'];
         message.referrer = info['pageUrl'];
+        message.cookies = cookies;
+
         sendMessageToHost(message);
         clearMessage();
     }
@@ -162,10 +195,14 @@ chrome.downloads.onCreated.addListener(function(downloadItem) {
     chrome.downloads.erase({ id: downloadItem.id }); // Erase the download from list
 
     clearMessage();
+    chrome.cookies.getAll({'url' : extractRootURL(info.pageUrl)}, parseCookies);
+
     message.url = url;
     message.filename = downloadItem['filename'];
     message.filesize = fileSize;
     message.referrer = downloadItem['referrer'];
+    message.cookies  = cookies;
+
     sendMessageToHost(message);
 });
 
@@ -286,13 +323,14 @@ chrome.webRequest.onHeadersReceived.addListener(function(details) {
         for (var j = 0; j < 3; j++) {
             if (details.requestId == requestList[j].id && requestList[j].id != "") {
                 message.referrer = requestList[j].referrer;
-                message.cookies = requestList[j].cookies;
                 break;
             }
         }
         if (details.method != "POST") {
             message.postdata = '';
         }
+        chrome.cookies.getAll({'url' : extractRootURL(message.url)}, parseCookies);
+        message.cookies = cookies;
         sendMessageToHost(message);
         message.postdata = '';
         var scheme = /^https/.test(details.url) ? 'https' : 'http';
