@@ -7,7 +7,7 @@ img: linux.png
 modal-url: manual-installation-for-chromium
 thumbnail: linux-chromium-thumbnail.png
 alt: image-alt
-description: Any Linux system with Python 2.7 must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below.
+description: Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below.
 steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /etc/chromium/native-messaging-hosts</code></pre>",

@@ -7,12 +7,12 @@ img: windows.png
 modal-url: windows
 thumbnail: windows-thumbnail.png
 alt: image-alt
-description: Windows is not our main target because of extra testing effort requried. Therefore uget-chrome-wrapper for Windows may get the updates and bug fixes bit later than the Linux version. To integrate uGet with Google Chrome/Chromium/Vivaldi, follow the steps given below.
-steps: ["Install <a href='https://www.python.org/downloads/release/python-2712/'>Python 2.7</a>",
+description: Windows is not our main target because of extra testing effort requried. Therefore uget-chrome-wrapper for Windows may get the updates and bug fixes bit later than the Linux version. To integrate uGet with Google Chrome/Chromium/Vivaldi/Opera, follow the steps given below.
+steps: ["Install <a href='https://www.python.org/downloads/'>Python 3.4 or latest</a>",
 		"Add uGet bin folder to the path (Open the screenshot in a new tab for clear image)<img src='https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/windows/add_uget_to_path.png' class='img-responsive img-centered' alt='Screenshot'/>",
-		"Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v1.3.3/uget-chrome-wrapper_1.3.3.exe'>uget-chrome-wrapper.exe</a>",
+		"Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v2.0.0/uget-chrome-wrapper_2.0.0.exe'>uget-chrome-wrapper_2.0.0.exe</a>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
-environments: ["Windows 8.1, uGet 2.0.8, Google Chrome 54.0.2840.59"]
+environments: ["Windows 10, uGet 2.0.8, Google Chrome 56.0.2924.87", "Windows 10, uGet 2.0.8, Vivaldi 1.7"]
 
 ---

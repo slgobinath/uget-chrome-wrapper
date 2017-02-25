@@ -7,8 +7,8 @@ img: arch.png
 modal-url: arch
 thumbnail: arch-thumbnail.png
 alt: image-alt
-description: Arch PKGBUILD is created by <a href='https://github.com/Sasasu'>Sasau</a>. To integrate uGet with Google Chrome/Chromium/Vivaldi, follow the steps given below.
-steps: ["Install uget-chrome-wrapper via  <a href='https://aur.archlinux.org/packages/uget-chrome-wrapper'>AUR</a>",
+description: Arch PKGBUILD is created by <a href='https://github.com/Sasasu'>Sasau</a>. To integrate uGet with Google Chrome/Chromium/Vivaldi/Opera, follow the steps given below.
+steps: ["Install uget-chrome-wrapper via  <a href='https://aur.archlinux.org/packages/uget-chrome-wrapper'>AUR</a><pre><code>packer -S uget-chrome-wrapper</code></pre> or <pre><code>yaourt -S uget-chrome-wrapper</code></pre>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
 environments: ["Arch Anywhere 2.2.3, uGet 2.0.8, Vivaldi 1.4.589.38"]

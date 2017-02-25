@@ -5,15 +5,15 @@
     <description>Integrate uGet Download Manager with Google Chrome, Chromium and Vivaldi</description>
     <link>http://localhost:4000/uget-chrome-wrapper/</link>
     <atom:link href="http://localhost:4000/uget-chrome-wrapper/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 10 Nov 2016 09:50:27 +0530</pubDate>
-    <lastBuildDate>Thu, 10 Nov 2016 09:50:27 +0530</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <pubDate>Sat, 25 Feb 2017 11:59:21 -0500</pubDate>
+    <lastBuildDate>Sat, 25 Feb 2017 11:59:21 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
     
       <item>
         <title>Ubuntu</title>
         <description>
 </description>
-        <pubDate>Fri, 18 Jul 2014 00:00:00 +0530</pubDate>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/uget-chrome-wrapper/2014/07/18/project-1/</link>
         <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/18/project-1/</guid>
         
@@ -24,7 +24,7 @@
         <title>Arch</title>
         <description>
 </description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 +0530</pubDate>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/uget-chrome-wrapper/2014/07/17/project-2/</link>
         <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/17/project-2/</guid>
         
@@ -35,7 +35,7 @@
         <title>Any Linux Systems</title>
         <description>
 </description>
-        <pubDate>Wed, 16 Jul 2014 00:00:00 +0530</pubDate>
+        <pubDate>Wed, 16 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/uget-chrome-wrapper/2014/07/16/project-3/</link>
         <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/16/project-3/</guid>
         
@@ -46,7 +46,7 @@
         <title>Any Linux Systems</title>
         <description>
 </description>
-        <pubDate>Tue, 15 Jul 2014 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/uget-chrome-wrapper/2014/07/15/project-4/</link>
         <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/15/project-4/</guid>
         
@@ -57,7 +57,7 @@
         <title>Windows</title>
         <description>
 </description>
-        <pubDate>Mon, 14 Jul 2014 00:00:00 +0530</pubDate>
+        <pubDate>Mon, 14 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/uget-chrome-wrapper/2014/07/14/project-5/</link>
         <guid isPermaLink="true">http://localhost:4000/uget-chrome-wrapper/2014/07/14/project-5/</guid>
         

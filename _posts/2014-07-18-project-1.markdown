@@ -7,12 +7,12 @@ img: ubuntu.png
 modal-url: ubuntu
 thumbnail: ubuntu-thumbnail.png
 alt: image-alt
-description: Linux Mint is the development environment of uget-chrome-wrapper so all features are tested in Ubuntu environment. To integrate uGet with Google Chrome/Chromium/Vivaldi, follow the steps given below.
+description: Linux Mint is the development environment of uget-chrome-wrapper so all features are tested in Ubuntu environment. To integrate uGet with Google Chrome/Chromium/Vivaldi/Opera, follow the steps given below.
 steps: ["Add the PPA:<pre><code>sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</code></pre>",
-		"Download the package list:<pre><code>sudo apt-get update</code></pre>",
+		"Download the package list:<pre><code>sudo apt update</code></pre>",
 		"Install uget-chrome-wrapper:<pre><code>sudo apt install uget-chrome-wrapper</code></pre>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
-environments: ["Ubuntu 14.04.5, uGet 2.0.8, Google Chrome 54.0.2840.59", "Linux Mint 18, uGet 2.0.8, Google Chrome 54.0.2840.59", "Linux Mint 18, uGet 2.0.8, Vivaldi 1.4.589.38"]
+environments: ["Linux Mint 18.1, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18, uGet 2.0.9, Vivaldi 1.7"]
 
 ---
