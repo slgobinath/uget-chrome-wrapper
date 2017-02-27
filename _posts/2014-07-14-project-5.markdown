@@ -11,7 +11,7 @@ description: Windows is not our main target because of extra testing effort requ
 steps: ["Install <a href='https://www.python.org/downloads/'>Python 3.4 or latest</a>",
 		"Add uGet bin folder to the path (Open the screenshot in a new tab for clear image)<img src='https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/windows/add_uget_to_path.png' class='img-responsive img-centered' alt='Screenshot'/>",
 		"Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v2.0.2/uget-chrome-wrapper_2.0.2.exe'>uget-chrome-wrapper_2.0.2.exe</a>",
-		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
+		"Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a>",
 		"Restart the browser"]
 environments: ["Windows 10, uGet 2.0.8, Google Chrome 56.0.2924.87", "Windows 10, uGet 2.0.8, Vivaldi 1.7"]
 

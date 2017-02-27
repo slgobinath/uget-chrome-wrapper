@@ -11,7 +11,7 @@ description: Linux Mint is the development environment of uget-chrome-wrapper so
 steps: ["Add the PPA:<pre><code>sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</code></pre>",
 		"Download the package list:<pre><code>sudo apt update</code></pre>",
 		"Install uget-chrome-wrapper:<pre><code>sudo apt install uget-chrome-wrapper</code></pre>",
-		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
+		"Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a>",
 		"Restart the browser"]
 environments: ["Ubuntu 14.04, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18.1, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18.1, uGet 2.0.9, Vivaldi 1.7", "Linux Mint 18.1, uGet 2.0.9, Opera 43.0"]
 

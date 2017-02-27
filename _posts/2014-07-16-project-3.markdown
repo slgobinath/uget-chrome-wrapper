@@ -12,7 +12,7 @@ steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wge
 		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Create a new directory <i>native-messaging-hosts</i> if not exists:<pre><code>sudo mkdir -p /etc/opt/chrome/native-messaging-hosts</code></pre>",
 		"Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/opt/chrome/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre>",
-		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
+		"Install the uGet Integration extension - Google Chrome users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a>",
 		"Restart the browser"]
 environments: ["Ubuntu 14.04, uGet 2.0.9, Google Chrome 56.0.2924.87"]
 

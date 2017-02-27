@@ -12,7 +12,7 @@ steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wge
 		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /etc/chromium/native-messaging-hosts</code></pre>",
 		"Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/chromium/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre>",
-		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
+		"Install the uGet Integration extension - Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a>",
 		"Restart the browser"]
 environments: ["Manjaro 16.10.3 Fringilla, uGet 2.0.8, Chromium 56.0.2924.87"]
 
