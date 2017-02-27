@@ -13,6 +13,6 @@ steps: ["Add the PPA:<pre><code>sudo add-apt-repository ppa:slgobinath/uget-chro
 		"Install uget-chrome-wrapper:<pre><code>sudo apt install uget-chrome-wrapper</code></pre>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
-environments: ["Linux Mint 18.1, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18, uGet 2.0.9, Vivaldi 1.7"]
+environments: ["Ubuntu 14.04, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18.1, uGet 2.0.9, Google Chrome 56.0.2924.87", "Linux Mint 18.1, uGet 2.0.9, Vivaldi 1.7", "Linux Mint 18.1, uGet 2.0.9, Opera 43.0"]
 
 ---

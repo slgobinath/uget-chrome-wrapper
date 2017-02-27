@@ -14,6 +14,6 @@ steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wge
 		"Download the <i>com.javahelps.ugetchromewrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetchromewrapper.json --output-document /etc/chromium/native-messaging-hosts/com.javahelps.ugetchromewrapper.json</code></pre>",
 		"Install <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>uGet Integration</a> extension to your browser",
 		"Restart the browser"]
-environments: ["Arch Anywhere 2.2.3, uGet 2.0.8, Vivaldi 1.4.589.38", "Manjaro 16.10 Fringilla, uGet 2.0.8, Chromium 54"]
+environments: ["Manjaro 16.10.3 Fringilla, uGet 2.0.8, Chromium 56.0.2924.87"]
 
 ---
