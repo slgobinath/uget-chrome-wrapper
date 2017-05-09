@@ -1,18 +1,19 @@
 ---
-title: Windows
-subtitle: Setup for Windows
+title: Any Linux Systems
+subtitle: Manual installation for Mozilla Firefox
 layout: default
-modal-id: 4
-img: windows.png
-modal-url: windows
-thumbnail: windows-thumbnail.png
+modal-id: 3
+img: linux.png
+modal-url: manual-installation-for-firefox
+thumbnail: linux-firefox-thumbnail.png
 alt: image-alt
-description: Windows is not our main target because of extra testing effort requried. Therefore uget-chrome-wrapper for Windows may get the updates and bug fixes bit later than the Linux version. To integrate uGet with Google Chrome/Chromium/Vivaldi/Opera, follow the steps given below.
-steps: ["Install <a href='https://www.python.org/downloads/'>Python 3.4 or latest</a>",
-		"Add uGet bin folder to the path (Open the screenshot in a new tab for clear image)<img src='https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/windows/add_uget_to_path.png' class='img-responsive img-centered' alt='Screenshot'/>",
-		"Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v2.0.2/uget-chrome-wrapper_2.0.2.exe'>uget-chrome-wrapper_2.0.2.exe</a>",
-		"Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a>",
+description: Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Mozilla Firefox</strong>, follow the steps given below.
+steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre>",
+		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
+		"Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts</code></pre>",
+		"Download the <i>com.javahelps.ugetfirefoxwrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetfirefoxwrapper.json --output-document /usr/lib/mozilla/native-messaging-hosts/com.javahelps.ugetfirefoxwrapper.json</code></pre>",
+		"Install the uGet Integration extension - Mozilla Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a>",
 		"Restart the browser"]
-environments: ["Windows 10, uGet 2.0.8, Google Chrome 56.0.2924.87", "Windows 10, uGet 2.0.8, Vivaldi 1.7"]
+environments: ["N/A"]
 
 ---

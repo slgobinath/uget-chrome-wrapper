@@ -119,7 +119,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-chrome fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Google Chrome, Chromium, Vivaldi & Opera</h4>
+                    <h4 class="service-heading">Google Chrome, Chromium, Vivaldi, Opera &amp; Mozilla Firefox</h4>
                     <p class="text-muted">The fast, secure, and free web browsers built for the modern web. uGet Integration extension is available for all these browsers.
                 </div>
                 <div class="col-md-4">
@@ -127,12 +127,13 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-linux fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Linux & Windows</h4>
+                    <h4 class="service-heading">Linux &amp; Windows</h4>
                     <p class="text-muted">This project is an attempt to fill the gap in download accelerators available for Linux. However, setup for Windows is available for people using uGet in Windows.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Portfolio Grid Section -->
     <section id="installation" class="bg-light-gray">
         <div class="container">
@@ -201,6 +202,21 @@
                     <div class="portfolio-caption">
                         <h4>Any Linux Systems</h4>
                         <p class="text-muted">Manual installation for Chromium & Vivaldi</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#manual-installation-for-firefox" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/linux-firefox-thumbnail.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Any Linux Systems</h4>
+                        <p class="text-muted">Manual installation for Mozilla Firefox</p>
                     </div>
                 </div>
             
@@ -511,7 +527,7 @@
                             
                                 <li align="left">Install uget-chrome-wrapper:<pre><code>sudo apt install uget-chrome-wrapper</code></pre></li>
                             
-                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a></li>
+                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a> Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a></li>
                             
                                 <li align="left">Restart the browser</li>
                             
@@ -559,7 +575,7 @@
                             
                                 <li align="left">Install uget-chrome-wrapper via  <a href='https://aur.archlinux.org/packages/uget-chrome-wrapper'>AUR</a><pre><code>packer -S uget-chrome-wrapper</code></pre> or <pre><code>yaourt -S uget-chrome-wrapper</code></pre></li>
                             
-                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a></li>
+                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a> Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a></li>
                             
                                 <li align="left">Restart the browser</li>
                             
@@ -680,6 +696,54 @@
         </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="manual-installation-for-firefox" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Any Linux Systems</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/linux.png" class="img-responsive img-centered" alt="image-alt"> -->
+                            <p>Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Mozilla Firefox</strong>, follow the steps given below.</p>
+                            <p align="left">
+                            <ol>
+                            
+                                <li align="left">Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre></li>
+                            
+                                <li align="left">Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts</code></pre></li>
+                            
+                                <li align="left">Download the <i>com.javahelps.ugetfirefoxwrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetfirefoxwrapper.json --output-document /usr/lib/mozilla/native-messaging-hosts/com.javahelps.ugetfirefoxwrapper.json</code></pre></li>
+                            
+                                <li align="left">Install the uGet Integration extension - Mozilla Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a></li>
+                            
+                                <li align="left">Restart the browser</li>
+                            
+                            </ol>
+                            </p>
+                            <br>
+                            <h3>Tested Environments</h3>
+                                
+                                    N/A<br>
+                                
+
+                                <br><br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="windows" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -705,7 +769,7 @@
                             
                                 <li align="left">Download and install <a href='https://github.com/slgobinath/uget-chrome-wrapper/releases/download/v2.0.2/uget-chrome-wrapper_2.0.2.exe'>uget-chrome-wrapper_2.0.2.exe</a></li>
                             
-                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a></li>
+                                <li align="left">Install the uGet Integration extension - Google Chrome, Chromium & Vivaldi users: <a href='https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi'>Chrome Extension</a> Opera users: <a href='https://addons.opera.com/en/extensions/details/uget-integration'>Opera Extension</a> Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a></li>
                             
                                 <li align="left">Restart the browser</li>
                             
