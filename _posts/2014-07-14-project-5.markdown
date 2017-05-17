@@ -8,10 +8,10 @@ modal-url: manual-installation-for-firefox
 thumbnail: linux-firefox-thumbnail.png
 alt: image-alt
 description: Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Mozilla Firefox</strong>, follow the steps given below.
-steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre>",
+steps: ["Download the uget-chrome-wrapper to <i>/usr/bin</i>:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/v2.0.4/uget-chrome-wrapper/bin/uget-chrome-wrapper --output-document /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre>",
 		"Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts</code></pre>",
-		"Download the <i>com.javahelps.ugetfirefoxwrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/uget-chrome-wrapper/conf/com.javahelps.ugetfirefoxwrapper.json --output-document /usr/lib/mozilla/native-messaging-hosts/com.javahelps.ugetfirefoxwrapper.json</code></pre>",
+		"Download the <i>com.javahelps.ugetfirefoxwrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/v2.0.4/uget-chrome-wrapper/conf/com.javahelps.ugetfirefoxwrapper.json --output-document /usr/lib/mozilla/native-messaging-hosts/com.javahelps.ugetfirefoxwrapper.json</code></pre>",
 		"Install the uGet Integration extension - Mozilla Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a>",
 		"Restart the browser"]
 environments: ["N/A"]
