@@ -339,7 +339,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">A crazy guy who spends his time to develop some bullshits</h3>
+                    <h3 class="section-subheading text-muted">A FOSS fanboy whose hobby is developing software</h3>
                 </div>
             </div>
             <div class="row">
@@ -663,7 +663,7 @@
                             <h2>Any Linux Systems</h2>
                             <hr class="star-primary">
                             <!-- <img src="img/portfolio/linux.png" class="img-responsive img-centered" alt="image-alt"> -->
-                            <p>Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below.</p>
+                            <p>Any Linux system with Python 3.4 or latest must be able to run uget-chrome-wrapper. To integrate uGet with <strong>Chromium & Vivaldi</strong>, follow the steps given below <strong>Note:</strong> If these steps do not work, please follow the installation guide of Chrome.</p>
                             <p align="left">
                             <ol>
                             
@@ -719,20 +719,20 @@
                             
                                 <li align="left">Make the uget-chrome-wrapper executable:<pre><code>sudo chmod +x /usr/bin/uget-chrome-wrapper</code></pre></li>
                             
-                                <li align="left">Create a new directory <i>native-messaging-hosts</i> if not exists (This path is common for both Chromium and Vivaldi):<pre><code>sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts</code></pre></li>
+                                <li align="left">Create a new directory <i>native-messaging-hosts</i> if not exists:<pre><code>sudo mkdir -p /usr/lib/mozilla/native-messaging-hosts</code></pre></li>
                             
                                 <li align="left">Download the <i>com.javahelps.ugetfirefoxwrapper.json</i> to that directory:<pre><code>sudo wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/v2.0.4/uget-chrome-wrapper/conf/com.javahelps.ugetfirefoxwrapper.json --output-document /usr/lib/mozilla/native-messaging-hosts/com.javahelps.ugetfirefoxwrapper.json</code></pre></li>
                             
                                 <li align="left">Install the uGet Integration extension - Mozilla Firefox users: <a href='https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/'>Firefox Add-on</a></li>
                             
-                                <li align="left">Restart the browser</li>
+                                <li align="left">Restart the browser. If the uGet Integration extension does not detect the uget-chrome-wrapper, change the directory in Steps 4 and 5 to <code>/usr/lib64/mozilla/native-messaging-hosts</code></li>
                             
                             </ol>
                             </p>
                             <br>
                             <h3>Tested Environments</h3>
                                 
-                                    N/A<br>
+                                    Fedora 26<br>
                                 
 
                                 <br><br>

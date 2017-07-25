@@ -5,8 +5,8 @@
     <description>Integrate uGet Download Manager with Google Chrome, Chromium and Vivaldi</description>
     <link>http://localhost:4000/uget-chrome-wrapper/</link>
     <atom:link href="http://localhost:4000/uget-chrome-wrapper/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 May 2017 12:23:14 -0400</pubDate>
-    <lastBuildDate>Wed, 17 May 2017 12:23:14 -0400</lastBuildDate>
+    <pubDate>Tue, 25 Jul 2017 09:18:48 -0400</pubDate>
+    <lastBuildDate>Tue, 25 Jul 2017 09:18:48 -0400</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
