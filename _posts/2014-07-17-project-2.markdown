@@ -2,7 +2,7 @@
 title: Arch
 subtitle: Install via Arch User Repository
 layout: default
-modal-id: 1
+modal-id: 2
 img: arch.png
 modal-url: arch
 thumbnail: arch-thumbnail.png
