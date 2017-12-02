@@ -1,0 +1,49 @@
+<a name="installation">
+    <h2>Installation</h2>
+</a>
+<ol>
+    <li>
+        <h4>Install the uget-chrome-wrapper</h4>
+        <mat-tab-group>
+            <mat-tab label="Arch">
+                <pre><code>
+      yaourt -S uget-chrome-wrapper
+    </code></pre>
+                <pre><code>
+      packer -S uget-chrome-wrapper
+    </code></pre>
+            </mat-tab>
+            <mat-tab label="Ubuntu &amp; Linux Mint">
+                <pre><code>
+          sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper
+          sudo apt update
+          sudo apt install uget-chrome-wrapper
+      </code></pre>
+            </mat-tab>
+            <mat-tab label="Other Linux">
+                <pre><code>
+            wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/linux/install_uget_chrome_wrapper.sh
+            sudo sh install_uget_chrome_wrapper.sh
+        </code></pre>
+            </mat-tab>
+            <mat-tab label="Windows">
+                <ol>
+                    <li>Install <a href="https://www.python.org/downloads/">Python 3.4 or latest</a></li>
+                    <li>Download and extract <a href="http://ugetdm.com/downloads-windows">uGet</a> to <code>C:\uget</code> folder</li>
+                    <li>Add the Python installation directory and <code>C:\uget\bin</code> folder to the environment variable <code>PATH</code><img src="https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/windows/add_uget_to_path.png"
+                            width="90%" /></li>
+                    <li>Download and install the latest <a href="https://github.com/slgobinath/uget-chrome-wrapper/releases">uget-chrome-wrapper_x.x.x.x.exe</a></li>
+                    <li>Restart the computer</li>
+                </ol>
+            </mat-tab>
+        </mat-tab-group>
+    </li>
+    <li>
+        <h4>Install the <code>uGet Integration</code> extension in your browser</h4>
+        <ul>
+            <li>Google Chrome, Chromium & Vivaldi users: <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi">Chrome Extension</a></li>
+            <li>Opera users: <a href="https://addons.opera.com/en/extensions/details/uget-integration">Opera Extension</a></li>
+            <li>Mozilla Firefox 56+ users: <a href="https://addons.mozilla.org/en-US/firefox/addon/ugetintegration/">Firefox Addon</a></li>
+        </ul>
+    </li>
+</ol>

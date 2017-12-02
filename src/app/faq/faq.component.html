@@ -1,0 +1,43 @@
+<a name="faq">
+    <h2>FAQ</h2>
+</a>
+
+<div class="col-sm-12">
+    <ol>
+        <li>
+            <h4>Will you support other download managers as Flashgot did?</h4>
+            No. This is one of my leisure time project and I do not have enough time to invest on supporting other download managers. However, you have the freedom to fork it and adapt to other download managers.
+        </li>
+        <li>
+            <h4>Why did you choose uGet over others?</h4>
+            I find uGet as the only GUI download manager with all required features and native implementation. So in my point of view, uGet is the best Free and Open Source download manager out there for Linux users.
+        </li>
+        <li>
+            <h4>Why does uGet Integration extension require so many permissions?</h4>
+            Whatever permissions required are necessary for the functionality of the extension. There is no misuse of the permissions and you can check the code as it is an open source project.
+        </li>
+        <li>
+            <h4>uGet Integration extension does not interrupt Google Drive</h4>
+            Google Drive is purposely ignored due to a known problem (See the GitHub issue
+            <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues/2">#2</a>).
+        </li>
+        <li>
+            <h4>uGet Integration extension does not interrupt streams?</h4>
+            If you set the minimum file size to interrupt the download to <code>-1</code>, the extension will interrupt streams. However, uGet download manager may fail to download those files successfully.
+        </li>
+        <li>
+            <h4>Why does the extension show Error: Unable to connect to the uget-chrome-wrapper?</h4>
+            If the <code>uget-chrome-wrapper</code> is not installed or setup properly, you may get this error. If you have alreay installed all the required components, a system restart may resolve the issue. If not, please check the GitHub issue
+            <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues/20">#20</a>.
+        </li>
+        <li>
+            <h4>The Firefox addon does not interrupt the download but download via right click context menu works</h4>
+            If Firefox does not interrupt downloads but Download with uGet works, delete the handlers.json from the following path: <code>~/.mozilla/firefox/mwad0hks.default/handlers.json</code>. You may have a different folder name instead of mwad0hks.default.
+            Firefox Nightly users may have firefox-trunk folder instead of firefox.
+        </li>
+        <li>
+            <h4>The extension does not interrupt downloads in Windows</h4>
+            Windows users may have prblems with longer <code>PATH</code> variable. Please check the GitHub issue <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues/43">#43</a> and <a href="https://github.com/slgobinath/uget-chrome-wrapper/issues/45">#45</a>.
+        </li>
+    </ol>
+</div>

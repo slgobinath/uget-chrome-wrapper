@@ -1,0 +1,13 @@
+.mat-tab-group,
+.mat-tab-label,
+.mat-tab-link {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+ol {
+    margin-left: -35px;
+}
+
+li {
+    margin: 20px 0;
+}
