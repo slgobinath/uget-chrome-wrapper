@@ -12,10 +12,6 @@
 </span>
 
 
-Integrate the famous FOSS uGet Download Manager with Google Chrome in Linux systems. With this tool, uGet can interrupt and catch your downloads from Google Chrome.
-
-For more details, visit the official page: [uGet Chrome Wrapper](https://slgobinath.github.io/uget-chrome-wrapper/)
-
 ## Installation
 
 To see how to install, visit the [installation guide](https://slgobinath.github.io/uget-chrome-wrapper/#installation) and click on your operating system.
