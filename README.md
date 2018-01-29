@@ -1,4 +1,17 @@
-# uGet Chrome Wrapper
+<span style="color:red;">
+
+# NOTICE
+
+> uget-chrome-wrapper has been adopted by uGet team as the official extension for uGet. Therefore, this repository is deprecated in favor of these two repositories:
+ - [uget-integrator](https://github.com/ugetdm/uget-integrator)
+ - [uget-extension](https://github.com/ugetdm/uget-extension)
+
+>Even though this repository will remain as it is, it will not be used for further development.<br>
+**Please submit all your issues and PRs to the above repositories in future**.
+
+</span>
+
+
 Integrate the famous FOSS uGet Download Manager with Google Chrome in Linux systems. With this tool, uGet can interrupt and catch your downloads from Google Chrome.
 
 For more details, visit the official page: [uGet Chrome Wrapper](https://slgobinath.github.io/uget-chrome-wrapper/)
